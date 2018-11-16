@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('student/{student_no}', function($student_no)
+{
+    return "studnetNo".$student_no;
+});
