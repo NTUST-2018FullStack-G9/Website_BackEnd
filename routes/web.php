@@ -19,3 +19,8 @@ Route::get('student/{student_no}', function($student_no)
 {
     return "studnetNo".$student_no;
 });
+
+Route::get('/starter', function()
+{
+    return view('starter');
+});
